@@ -1,12 +1,81 @@
-# React + Vite
+# Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, elegant Todo List application built with React and Vite. This application allows users to create, manage, and track their tasks with a clean and intuitive interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new todo items
+- Mark todos as complete/incomplete
+- Delete todos
+- Persistent storage using localStorage
+- Responsive design with a dark theme
+- Clean and intuitive user interface
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Todo List App Screenshot](https://via.placeholder.com/400x300?text=Todo+List+App)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/react1week.git
+   cd react1week
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Usage
+
+1. **Adding a Todo**: Enter a task in the input field and click "Add" or press Enter.
+2. **Completing a Todo**: Click the checkbox next to a todo to mark it as complete.
+3. **Deleting a Todo**: Click the "Delete" button next to a todo to remove it from the list.
+
+## Technologies Used
+
+- **React 19**: For building the user interface
+- **Vite**: For fast development and optimized builds
+- **localStorage API**: For persisting todos between sessions
+- **CSS**: For styling the application
+
+## Project Structure
+
+```
+react1week/
+├── public/
+├── src/
+│   ├── App.jsx            # Main application component
+│   ├── NewTodoForm.jsx    # Form for adding new todos
+│   ├── TodoItem.jsx       # Individual todo item component
+│   ├── TodoList.jsx       # List of todo items
+│   ├── main.jsx           # Application entry point
+│   └── styles.css         # Application styles
+├── index.html             # HTML template
+├── package.json           # Project dependencies and scripts
+└── README.md              # Project documentation
+```
+
+## Scripts
+
+- `npm run dev`: Start the development server
+- `npm run build`: Build the application for production
+- `npm run lint`: Run ESLint to check for code issues
+- `npm run preview`: Preview the production build locally
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
